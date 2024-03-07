@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../../../../../utils/constants/sizes.dart';
+import '../../../../../utils/theme/style.dart';
+
 class EmailField extends StatelessWidget {
   const EmailField({
     Key? key,
@@ -10,7 +13,7 @@ class EmailField extends StatelessWidget {
     return DecoratedBox(
       decoration: BoxDecoration(
         color: Theme.of(context).inputDecorationTheme.fillColor,
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(TSizes. borderRadiusLg),
       ),
       child: TextFormField(
         decoration: InputDecoration(

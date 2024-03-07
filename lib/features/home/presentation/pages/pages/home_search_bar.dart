@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:flutter_kit/utils/theme/widget_themes/text_theme.dart';
 
+import '../../../../../utils/constants/sizes.dart';
+import '../../../../../utils/theme/style.dart';
 import '../../../../../utils/theme/theme.dart';
 
 class HomeSearchBar extends StatelessWidget {
@@ -13,7 +16,7 @@ class HomeSearchBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return DecoratedBox(
       decoration: BoxDecoration(
-          color: Theme.of(context).inputDecorationTheme.fillColor, borderRadius: BorderRadius.circular(12)),
+          color: Theme.of(context).inputDecorationTheme.fillColor, borderRadius:  BorderRadius.circular(TSizes. borderRadiusLg)),
       child: TextField(
         decoration: InputDecoration(isDense: true,
           prefixIcon: Icon(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../../utils/constants/colors.dart';
@@ -12,10 +13,10 @@ class HomeAppbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        const Text(
+         Text(
           "What are you\ncooking today?",
           style: TextStyle(
-            fontSize: 32,
+            fontSize: 32.r,
             fontWeight: FontWeight.bold,
             height: 1,
           ),

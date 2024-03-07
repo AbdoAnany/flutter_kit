@@ -23,31 +23,31 @@ class TSizes {
 
 
   // Padding and margin sizes
-  static  double xs = 4.0.w;
-  static  double sm = 8.0.w;
-  static  double md = 16.0.w;
-  static  double lg = 24.0.w;
-  static  double xl = 32.0.w;
+  static  double xs = 4.0.r;
+  static  double sm = 8.0.r;
+  static  double md = 16.0.r;
+  static  double lg = 24.0.r;
+  static  double xl = 32.0.r;
 
   // Icon sizes
-  static  double iconXs = 12.0.w;
-  static  double iconSm = 16.0.w;
-  static  double iconMd = 24.0.w;
-  static  double iconLg = 32.0.w;
+  static  double iconXs = 12.0.spMin;
+  static  double iconSm = 16.0.spMin;
+  static  double iconMd = 24.0.spMin;
+  static  double iconLg = 32.0.spMin;
 
   // Font sizes
-  static  double fontSizeSm = 14.0.w;
-  static  double fontSizeMd = 16.0.w;
-  static  double fontSizeLg = 18.0.w;
+  static  double fontSizeSm = 14.0.r;
+  static  double fontSizeMd = 16.0.r;
+  static  double fontSizeLg = 18.0.r;
 
   // Button sizes
-  static  double buttonHeight = 52.0.h;
-  static  double buttonRadius = 12.0.w;
-  static  double buttonWidth = 120.0.w;
-  static  double buttonElevation = 4.0.w;
+  static  double buttonHeight = 52.0.r;
+  static  double buttonRadius = 12.0.r;
+  static  double buttonWidth = 120.0.r;
+  static  double buttonElevation = 4.0.r;
 
   // AppBar height
-  static  double appBarHeight = 56.0.h;
+  static  double appBarHeight = 56.0.r;
 
   // Image sizes
   static  double imageThumbSize = 80.0.w;
@@ -71,7 +71,7 @@ class TSizes {
   static  double productItemHeight = 160.0.h;
 
   // Input field
-  static  double inputFieldRadius = 12.0.w;
+  static  double inputFieldRadius = 12.0.sp;
   static  double spaceBtwInputFields = 16.0.w;
 
   // Card sizes

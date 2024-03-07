@@ -47,31 +47,29 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCMLGKR8jIFqwk2qIjTG7Ep0EBaHFpIOKM',
-    appId: '1:202259476090:web:091155b7e88acc171d55c3',
-    messagingSenderId: '202259476090',
-    projectId: 'base-firebase-67851',
-    authDomain: 'base-firebase-67851.firebaseapp.com',
-    storageBucket: 'base-firebase-67851.appspot.com',
-    measurementId: 'G-Z7GE38XF1R',
+    apiKey: 'AIzaSyCZUjO3_Bz93572tQqFSN7td1pabLfN-iw',
+    appId: '1:339336551842:web:79f1fee0c96914145f66fb',
+    messagingSenderId: '339336551842',
+    projectId: 'anany-me',
+    authDomain: 'anany-me.firebaseapp.com',
+    storageBucket: 'anany-me.appspot.com',
+    measurementId: 'G-3BPDEGB72J',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAV1XVX4Vt1ZFhtJ36VBda8rRpIyoxwo_0',
-    appId: '1:202259476090:android:8c2f37b6bb03f5de1d55c3',
-    messagingSenderId: '202259476090',
-    projectId: 'base-firebase-67851',
-    storageBucket: 'base-firebase-67851.appspot.com',
+    apiKey: 'AIzaSyDDpzH2MUTMPlJEofF-x1P7PC-BDDUK6zo',
+    appId: '1:339336551842:android:e2da6ef12f1f883b5f66fb',
+    messagingSenderId: '339336551842',
+    projectId: 'anany-me',
+    storageBucket: 'anany-me.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAIsDl5FUw7BgDonwWzV2j8BNFep4BKLxM',
-    appId: '1:202259476090:ios:6bc2bedf5eccc0eb1d55c3',
-    messagingSenderId: '202259476090',
-    projectId: 'base-firebase-67851',
-    storageBucket: 'base-firebase-67851.appspot.com',
-    androidClientId: '202259476090-eqso31rgpdoeb0kbihupc16a4931pevp.apps.googleusercontent.com',
-    iosClientId: '202259476090-nqhor606sncuc25rv6131s6e7odag1uu.apps.googleusercontent.com',
+    apiKey: 'AIzaSyCwVKD-66zHFfII8az_LCruXcNwwSzmLjU',
+    appId: '1:339336551842:ios:7a3054136d0596ad5f66fb',
+    messagingSenderId: '339336551842',
+    projectId: 'anany-me',
+    storageBucket: 'anany-me.appspot.com',
     iosBundleId: 'com.example.tStore',
   );
 }

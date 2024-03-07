@@ -9,8 +9,6 @@ import 'package:flutter_kit/utils/theme/widget_themes/text_theme.dart';
 
 import 'di.dart';
 import 'features/0-intro/presentation/intro_screen.dart';
-import 'features/0-intro/presentation/pages/OnboardingView.dart';
-import 'features/0-intro/presentation/pages/SplashScreen.dart';
 import 'features/auth/data/repositories/auth_repo_impl.dart';
 import 'features/auth/domain/use_cases/logout_use_case.dart';
 import 'features/auth/presentation/manager/login_bloc/login_bloc.dart';
@@ -44,7 +42,9 @@ class App extends StatelessWidget {
               ),
               minTextAdapt: true,
               splitScreenMode: true,
-              builder: (_, child) {
+              builder: (ctx, child) {
+                ScreenUtil.init(ctx);
+
                 return MaterialApp(
                   builder: (context,w){
                     TTextTheme.init(context,them);
