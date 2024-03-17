@@ -1,15 +1,14 @@
 part of 'home_bloc.dart';
 
+
 @immutable
 abstract class HomeEvent {}
 
-class CountChanged extends HomeEvent {
-  final int count;
+class ChangePageEvent extends HomeEvent {
+  final PageType newPage;
 
-  CountChanged({required this.count});
-}
+  ChangePageEvent(this.newPage);
 
-
-class LoginSubmitted extends HomeEvent {
-  LoginSubmitted();
+  @override
+  List<Object?> get props => [newPage];
 }

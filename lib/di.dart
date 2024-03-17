@@ -49,7 +49,9 @@ authSetup(){
 
 
 
-  sl.registerFactory<HomeBloc>(() => HomeBloc( LogoutUseCase(sl.get<AuthRepoImpl>()),));
+  sl.registerFactory<HomeBloc>(() => HomeBloc(
+  //  LogoutUseCase(sl.get<AuthRepoImpl>()),
+  ));
   sl.registerFactory<LoginCubit>(() => LoginCubit());
   sl.registerFactory<LoginControl>(() => LoginControl());
   // sl.registerFactory<LoginBloc>(() => LoginBloc(LoginUseCase(sl.get<AuthRepoImpl>(),)));

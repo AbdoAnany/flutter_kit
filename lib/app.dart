@@ -14,9 +14,10 @@ import 'features/auth/domain/use_cases/logout_use_case.dart';
 import 'features/auth/presentation/manager/login_bloc/login_bloc.dart';
 import 'features/home/presentation/manager/home_bloc/home_bloc.dart';
 
-final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
 class Get {
+  static final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
+
   static BuildContext get context => navigatorKey.currentContext!;
   static NavigatorState get navigator => navigatorKey.currentState!;
 
@@ -30,7 +31,7 @@ class App extends StatelessWidget {
         providers: [
           ChangeNotifierProvider(create: (context) => ThemeProvider()),
           BlocProvider(create: (context) => LoginCubit( )),
-          BlocProvider(create: (context) => HomeBloc( LogoutUseCase(sl.get<AuthRepoImpl>()),)),
+     //     BlocProvider(create: (context) => HomeBloc()),
         ],
         child: Consumer<ThemeProvider>(builder: (context, them, c) {
           them.getThemeMode();
@@ -50,7 +51,7 @@ class App extends StatelessWidget {
                     TTextTheme.init(context,them);
                     return w!;
                   },
-                    navigatorKey: navigatorKey,
+                    navigatorKey: Get.navigatorKey,
                     title: TTexts.appName,
                     themeMode: them.themeMode,
                     theme: TAppTheme.lightTheme,
